@@ -8,6 +8,8 @@ class UserInput extends Component {
     hometown: ''
   }
 
+/// ACTIONS
+
   handleInputChange = (event) => {
     this.setState({
       [event.target.id]: event.target.value
@@ -23,7 +25,7 @@ class UserInput extends Component {
     return(
       <form onSubmit={this.handleOnSubmit}>
         <p>
-          <input
+          Username: <input
             type="text"
             id="username"
             onChange={this.handleInputChange}
@@ -31,7 +33,7 @@ class UserInput extends Component {
           />
         </p>
         <p>
-          <input
+          Hometown: <input
             type="text"
             id="hometown"
             onChange={this.handleInputChange}
